@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
+		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
+		E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73F24B2254E00C6C408 /* EventsOverview.swift */; };
 		E349426D24AF50C600658E9D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349426C24AF50C600658E9D /* Tests_iOS.swift */; };
 		E349427824AF50C600658E9D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349427724AF50C600658E9D /* Tests_macOS.swift */; };
 		E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425124AF50C400658E9D /* AthletyApp.swift */; };
 		E349427B24AF50C600658E9D /* AthletyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425124AF50C400658E9D /* AthletyApp.swift */; };
-		E349427C24AF50C600658E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425224AF50C400658E9D /* ContentView.swift */; };
-		E349427D24AF50C600658E9D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425224AF50C400658E9D /* ContentView.swift */; };
 		E349427E24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
 		E349427F24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -35,8 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
+		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
+		E304B73F24B2254E00C6C408 /* EventsOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOverview.swift; sourceTree = "<group>"; };
 		E349425124AF50C400658E9D /* AthletyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyApp.swift; sourceTree = "<group>"; };
-		E349425224AF50C400658E9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E349425324AF50C600658E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E349425824AF50C600658E9D /* Athlety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athlety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E349425B24AF50C600658E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +86,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E304B73824B21EBC00C6C408 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E304B73C24B2231900C6C408 /* AthletyAppView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E304B73924B21EC700C6C408 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E304B73E24B2252E00C6C408 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				E304B73F24B2254E00C6C408 /* EventsOverview.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
 		E349424B24AF50C400658E9D = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				E349425124AF50C400658E9D /* AthletyApp.swift */,
-				E349425224AF50C400658E9D /* ContentView.swift */,
 				E349425324AF50C600658E9D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -119,6 +145,8 @@
 		E349425A24AF50C600658E9D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E304B73924B21EC700C6C408 /* App */,
+				E304B73E24B2252E00C6C408 /* Events */,
 				E349425B24AF50C600658E9D /* Info.plist */,
 			);
 			path = iOS;
@@ -127,6 +155,7 @@
 		E349426124AF50C600658E9D /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E304B73824B21EBC00C6C408 /* App */,
 				E349426224AF50C600658E9D /* Info.plist */,
 				E349426324AF50C600658E9D /* macOS.entitlements */,
 			);
@@ -308,8 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E349427C24AF50C600658E9D /* ContentView.swift in Sources */,
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
+				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
+				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +347,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E349427D24AF50C600658E9D /* ContentView.swift in Sources */,
 				E349427B24AF50C600658E9D /* AthletyApp.swift in Sources */,
+				E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

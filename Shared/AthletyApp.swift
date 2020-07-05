@@ -1,6 +1,6 @@
 //
 //  AthletyApp.swift
-//  Shared
+//  Athlety
 //
 //  Created by Stefan Cimander on 03.07.20.
 //
@@ -11,7 +11,7 @@ import SwiftUI
 struct AthletyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AthletyAppView()
         }
     }
 }
