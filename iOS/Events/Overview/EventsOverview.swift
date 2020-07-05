@@ -21,7 +21,9 @@ struct EventsOverview: View {
     }
     
     private var addButton: some View {
+        let addEventView = AddEventView() { _ in }
         return Button("Add") { self.showAddEventModal.toggle() }
+            .sheet(isPresented: self.$showAddEventModal) { addEventView }
     }
 }
 

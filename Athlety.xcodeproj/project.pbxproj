@@ -10,6 +10,8 @@
 		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
 		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
 		E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73F24B2254E00C6C408 /* EventsOverview.swift */; };
+		E304B74224B2332700C6C408 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B74124B2332700C6C408 /* AddEventView.swift */; };
+		E319BA7224B23552007040B4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
 		E349426D24AF50C600658E9D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349426C24AF50C600658E9D /* Tests_iOS.swift */; };
 		E349427824AF50C600658E9D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349427724AF50C600658E9D /* Tests_macOS.swift */; };
 		E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425124AF50C400658E9D /* AthletyApp.swift */; };
@@ -39,6 +41,8 @@
 		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73F24B2254E00C6C408 /* EventsOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOverview.swift; sourceTree = "<group>"; };
+		E304B74124B2332700C6C408 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		E319BA7124B23552007040B4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E349425124AF50C400658E9D /* AthletyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyApp.swift; sourceTree = "<group>"; };
 		E349425324AF50C600658E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E349425824AF50C600658E9D /* Athlety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Athlety.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +109,42 @@
 		E304B73E24B2252E00C6C408 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				E304B73F24B2254E00C6C408 /* EventsOverview.swift */,
+				E304B74324B2333000C6C408 /* Add */,
+				E304B74424B2333600C6C408 /* Overview */,
 			);
 			path = Events;
+			sourceTree = "<group>";
+		};
+		E304B74324B2333000C6C408 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E304B74124B2332700C6C408 /* AddEventView.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		E304B74424B2333600C6C408 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				E304B73F24B2254E00C6C408 /* EventsOverview.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		E319BA6F24B23515007040B4 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				E319BA7124B23552007040B4 /* Event.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		E319BA7024B2351D007040B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E349425124AF50C400658E9D /* AthletyApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		E349424B24AF50C400658E9D = {
@@ -125,7 +162,8 @@
 		E349425024AF50C400658E9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E349425124AF50C400658E9D /* AthletyApp.swift */,
+				E319BA7024B2351D007040B4 /* App */,
+				E319BA6F24B23515007040B4 /* Events */,
 				E349425324AF50C600658E9D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -340,6 +378,8 @@
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
+				E304B74224B2332700C6C408 /* AddEventView.swift in Sources */,
+				E319BA7224B23552007040B4 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
