@@ -3,14 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89CBAE0B52A976BD71CAEC39 /* Pods_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E0E8A67D514B6F8B345C40 /* Pods_macOS.framework */; };
+		E0A8D5E25C8C19F6E5336072 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4B280D6C02BB67B308B351 /* Pods_iOS.framework */; };
 		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
 		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
 		E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73F24B2254E00C6C408 /* EventsOverview.swift */; };
 		E304B74224B2332700C6C408 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B74124B2332700C6C408 /* AddEventView.swift */; };
+		E31422FC24B8FE5A00CCE52C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */; };
+		E31689EF24B8FB610061D9DF /* AthletyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */; };
 		E319BA7224B23552007040B4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
 		E349426D24AF50C600658E9D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349426C24AF50C600658E9D /* Tests_iOS.swift */; };
 		E349427824AF50C600658E9D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349427724AF50C600658E9D /* Tests_macOS.swift */; };
@@ -38,10 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C4B280D6C02BB67B308B351 /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A3EDF2CC9C60DFF27443C61 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		63A9B8B3CBAC81C5F6EFBBD3 /* Pods-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.release.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		6D88E6C0D239F1A902BCD404 /* Pods-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iOS/Pods-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C4263D7E22979745A95D7D8B /* Pods-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS.debug.xcconfig"; path = "Target Support Files/Pods-macOS/Pods-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E0E0E8A67D514B6F8B345C40 /* Pods_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73F24B2254E00C6C408 /* EventsOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOverview.swift; sourceTree = "<group>"; };
 		E304B74124B2332700C6C408 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppDelegate.swift; sourceTree = "<group>"; };
 		E319BA7124B23552007040B4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E349425124AF50C400658E9D /* AthletyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyApp.swift; sourceTree = "<group>"; };
 		E349425324AF50C600658E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A8D5E25C8C19F6E5336072 /* Pods_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CBAE0B52A976BD71CAEC39 /* Pods_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +104,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8963DC12D3FD82C1F06C4CEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C4B280D6C02BB67B308B351 /* Pods_iOS.framework */,
+				E0E0E8A67D514B6F8B345C40 /* Pods_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE9A1F2487ECA5213E482E75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D88E6C0D239F1A902BCD404 /* Pods-iOS.debug.xcconfig */,
+				5A3EDF2CC9C60DFF27443C61 /* Pods-iOS.release.xcconfig */,
+				C4263D7E22979745A95D7D8B /* Pods-macOS.debug.xcconfig */,
+				63A9B8B3CBAC81C5F6EFBBD3 /* Pods-macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E304B73824B21EBC00C6C408 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */,
+				E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -156,6 +191,8 @@
 				E349426B24AF50C600658E9D /* Tests iOS */,
 				E349427624AF50C600658E9D /* Tests macOS */,
 				E349425924AF50C600658E9D /* Products */,
+				AE9A1F2487ECA5213E482E75 /* Pods */,
+				8963DC12D3FD82C1F06C4CEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,6 +222,7 @@
 			children = (
 				E304B73924B21EC700C6C408 /* App */,
 				E304B73E24B2252E00C6C408 /* Events */,
+				E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */,
 				E349425B24AF50C600658E9D /* Info.plist */,
 			);
 			path = iOS;
@@ -225,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E349428224AF50C600658E9D /* Build configuration list for PBXNativeTarget "iOS" */;
 			buildPhases = (
+				28096520E53DAA43D88AC0C1 /* [CP] Check Pods Manifest.lock */,
 				E349425424AF50C600658E9D /* Sources */,
 				E349425524AF50C600658E9D /* Frameworks */,
 				E349425624AF50C600658E9D /* Resources */,
+				184915AA86DEE8BCE68666E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -242,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E349428524AF50C600658E9D /* Build configuration list for PBXNativeTarget "macOS" */;
 			buildPhases = (
+				88B67E51AEEC7245085BFD1A /* [CP] Check Pods Manifest.lock */,
 				E349425C24AF50C600658E9D /* Sources */,
 				E349425D24AF50C600658E9D /* Frameworks */,
 				E349425E24AF50C600658E9D /* Resources */,
@@ -343,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E349427E24AF50C600658E9D /* Assets.xcassets in Resources */,
+				E31422FC24B8FE5A00CCE52C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,11 +412,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		184915AA86DEE8BCE68666E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS/Pods-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28096520E53DAA43D88AC0C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88B67E51AEEC7245085BFD1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E349425424AF50C600658E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31689EF24B8FB610061D9DF /* AthletyAppDelegate.swift in Sources */,
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
@@ -537,6 +644,7 @@
 		};
 		E349428324AF50C600658E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D88E6C0D239F1A902BCD404 /* Pods-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -548,7 +656,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.Athlety;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.athlety;
 				PRODUCT_NAME = Athlety;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -558,6 +666,7 @@
 		};
 		E349428424AF50C600658E9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3EDF2CC9C60DFF27443C61 /* Pods-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -569,7 +678,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.Athlety;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.athlety;
 				PRODUCT_NAME = Athlety;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -580,6 +689,7 @@
 		};
 		E349428624AF50C600658E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4263D7E22979745A95D7D8B /* Pods-macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -593,7 +703,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.Athlety;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.athlety;
 				PRODUCT_NAME = Athlety;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -602,6 +712,7 @@
 		};
 		E349428724AF50C600658E9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63A9B8B3CBAC81C5F6EFBBD3 /* Pods-macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -615,7 +726,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.Athlety;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nordlicht.athlety;
 				PRODUCT_NAME = Athlety;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;

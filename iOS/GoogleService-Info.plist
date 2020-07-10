@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>333473414849-1guajieel8ah6g62e2sl6mvd0944mkte.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.333473414849-1guajieel8ah6g62e2sl6mvd0944mkte</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBtGq0TYGUFew-RCtkUByFK0oxCmsjeidQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>333473414849</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.nordlicht.athlety</string>
+	<key>PROJECT_ID</key>
+	<string>athlety-efb06</string>
+	<key>STORAGE_BUCKET</key>
+	<string>athlety-efb06.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:333473414849:ios:78bb042c7a3c2948</string>
+	<key>DATABASE_URL</key>
+	<string>https://athlety-efb06.firebaseio.com</string>
+</dict>
+</plist>
