@@ -7,6 +7,7 @@ target 'iOS' do
 
   # Pods for iOS
   pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
 end
 
@@ -15,5 +16,7 @@ target 'macOS' do
   use_frameworks!
 
   # Pods for macOS
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
 
 end

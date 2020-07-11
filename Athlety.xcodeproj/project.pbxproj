@@ -22,6 +22,9 @@
 		E349427B24AF50C600658E9D /* AthletyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349425124AF50C400658E9D /* AthletyApp.swift */; };
 		E349427E24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
 		E349427F24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
+		E3B817E424BA3E990077951F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
+		E3B817E524BA3E990077951F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
+		E3B817E624BA3E9E0077951F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,7 @@
 		E349427324AF50C600658E9D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E349427724AF50C600658E9D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E349427924AF50C600658E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3B817E324BA3E990077951F /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				E319BA7124B23552007040B4 /* Event.swift */,
+				E3B817E324BA3E990077951F /* EventStore.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				E349425C24AF50C600658E9D /* Sources */,
 				E349425D24AF50C600658E9D /* Frameworks */,
 				E349425E24AF50C600658E9D /* Resources */,
+				DA5146088FAD7069E9E83F53 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -474,6 +480,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA5146088FAD7069E9E83F53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-macOS/Pods-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -484,6 +507,7 @@
 				E31689EF24B8FB610061D9DF /* AthletyAppDelegate.swift in Sources */,
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
+				E3B817E424BA3E990077951F /* EventStore.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
 				E304B74224B2332700C6C408 /* AddEventView.swift in Sources */,
 				E319BA7224B23552007040B4 /* Event.swift in Sources */,
@@ -494,8 +518,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3B817E624BA3E9E0077951F /* Event.swift in Sources */,
 				E349427B24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */,
+				E3B817E524BA3E990077951F /* EventStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

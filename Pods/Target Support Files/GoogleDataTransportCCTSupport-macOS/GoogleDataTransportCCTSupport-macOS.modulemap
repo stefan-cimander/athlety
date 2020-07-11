@@ -1,0 +1,6 @@
+framework module GoogleDataTransportCCTSupport {
+  umbrella header "GoogleDataTransportCCTSupport-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
