@@ -15,4 +15,9 @@ class EventTestData: EventStore {
             Event(id: "PXtToYDN4Q1GdquzMQgI", title: "Bayerische Meisterschaften", location: "Fürth")
         ]
     }
+    
+    override func update(_ event: Event) {
+        guard let index = events.firstIndex(where: { $0.id == event.id }) else { return }
+        events[index] = event
+    }
 }

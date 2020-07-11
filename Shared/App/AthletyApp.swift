@@ -19,7 +19,8 @@ struct AthletyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AthletyAppView(eventStore: eventStore)
+            AthletyAppView()
+                .environmentObject(eventStore)
         }
     }
 }

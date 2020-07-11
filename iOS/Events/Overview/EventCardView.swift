@@ -1,6 +1,6 @@
 //
 //  EventCardView.swift
-//  iOS
+//  Athlety
 //
 //  Created by Stefan Cimander on 11.07.20.
 //
@@ -12,11 +12,13 @@ struct EventCardView: View {
     var event: Event
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(event.title)
-                .font(.headline)
-            Text(event.location)
-                .font(.subheadline)
+        NavigationLink(destination: EventDetailsView(event: event)) {
+            VStack(alignment: .leading) {
+                Text(event.title)
+                    .font(.headline)
+                Text(event.location)
+                    .font(.subheadline)
+            }
         }
     }
 }

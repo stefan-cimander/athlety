@@ -9,8 +9,8 @@ import SwiftUI
 
 struct EventsOverview: View {
     
-    @ObservedObject
-    var eventStore: EventStore
+    @EnvironmentObject
+    private var eventStore: EventStore
     
     @State
     private var showAddEventModal = false
@@ -37,6 +37,6 @@ struct EventsOverview: View {
 
 struct EventsOverview_Previews: PreviewProvider {
     static var previews: some View {
-        EventsOverview(eventStore: EventTestData())
+        EventsOverview().environmentObject(EventTestData())
     }
 }

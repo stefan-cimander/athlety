@@ -25,6 +25,18 @@ class EventStore: ObservableObject {
         }
     }
     
+    func update(_ event: Event) {
+        guard let eventId = event.id else {
+            print("Cannot update event \(event.title) without an id")
+            return
+        }
+        do {
+            try eventsCollection.document(eventId).setData(from: event)
+        } catch {
+            print("Could not update event \(event.title) with id \(eventId) - \(error.localizedDescription)")
+        }
+    }
+    
     
     private func toEvent(snapshot: QueryDocumentSnapshot) -> Event? {
         do {

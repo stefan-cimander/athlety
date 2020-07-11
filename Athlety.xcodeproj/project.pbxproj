@@ -23,6 +23,7 @@
 		E349427E24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
 		E349427F24AF50C600658E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349425324AF50C600658E9D /* Assets.xcassets */; };
 		E35F7D5D24BA4A71008E7A2D /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F7D5C24BA4A71008E7A2D /* EventCardView.swift */; };
+		E35F7D6024BA53AA008E7A2D /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35F7D5F24BA53AA008E7A2D /* EventDetailsView.swift */; };
 		E3B817E424BA3E990077951F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
 		E3B817E524BA3E990077951F /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
 		E3B817E624BA3E9E0077951F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
@@ -75,6 +76,7 @@
 		E349427724AF50C600658E9D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E349427924AF50C600658E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E35F7D5C24BA4A71008E7A2D /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		E35F7D5F24BA53AA008E7A2D /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		E3B817E324BA3E990077951F /* EventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStore.swift; sourceTree = "<group>"; };
 		E3B817E724BA44F60077951F /* EventTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				E304B74324B2333000C6C408 /* Add */,
+				E35F7D5E24BA539E008E7A2D /* Details */,
 				E304B74424B2333600C6C408 /* Overview */,
 			);
 			path = Events;
@@ -266,6 +269,14 @@
 				E349427924AF50C600658E9D /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E35F7D5E24BA539E008E7A2D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				E35F7D5F24BA53AA008E7A2D /* EventDetailsView.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +530,7 @@
 				E3B817E424BA3E990077951F /* EventStore.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
 				E304B74224B2332700C6C408 /* AddEventView.swift in Sources */,
+				E35F7D6024BA53AA008E7A2D /* EventDetailsView.swift in Sources */,
 				E319BA7224B23552007040B4 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

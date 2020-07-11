@@ -7,12 +7,14 @@
 
 import FirebaseFirestoreSwift
 
-struct Event: Identifiable, Decodable {
+struct Event: Identifiable, Codable {
     
     @DocumentID
     var id: String?
     
     var title: String
     var location: String
+    
+    var isFavorite: Bool = false
     
 }
