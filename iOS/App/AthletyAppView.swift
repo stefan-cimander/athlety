@@ -9,12 +9,15 @@ import SwiftUI
 
 struct AthletyAppView: View {
     
+    @ObservedObject
+    var eventStore: EventStore
+    
     @State
     private var selectedTab = 1
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            EventsOverview()
+            EventsOverview(eventStore: eventStore)
                 .tabItem {
                     let imageName = selectedTab == 1 ? "bookmark.fill" : "bookmark"
                     Image(systemName: imageName).imageScale(.large)
@@ -35,7 +38,7 @@ struct AthletyAppView: View {
 struct AthletyAppView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AthletyAppView()
+            AthletyAppView(eventStore: EventTestData())
         }
     }
 }

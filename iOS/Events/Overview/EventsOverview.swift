@@ -9,15 +9,23 @@ import SwiftUI
 
 struct EventsOverview: View {
     
+    @ObservedObject
+    var eventStore: EventStore
+    
     @State
     private var showAddEventModal = false
     
     var body: some View {
         NavigationView {
-            Text("")
-                .navigationBarTitle("Events")
-                .navigationBarItems(trailing: addButton)
+            List {
+                ForEach(eventStore.events) { event in
+                    EventCardView(event: event)
+                }
+            }
+            .navigationBarTitle("Events")
+            .navigationBarItems(trailing: addButton)
         }
+        .onAppear { eventStore.loadAll() }
     }
     
     private var addButton: some View {
@@ -29,6 +37,6 @@ struct EventsOverview: View {
 
 struct EventsOverview_Previews: PreviewProvider {
     static var previews: some View {
-        EventsOverview()
+        EventsOverview(eventStore: EventTestData())
     }
 }

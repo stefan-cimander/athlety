@@ -11,7 +11,7 @@ struct AddEventView: View {
     
     var onAdd: (Event) -> ()
     
-    @State private var name = ""
+    @State private var title = ""
     @State private var location = ""
     
     @State private var startDate = Date()
@@ -25,7 +25,7 @@ struct AddEventView: View {
             Form {
 
                 Section(header: Text("General")) {
-                    TextField("Name", text: $name)
+                    TextField("Title", text: $title)
                     TextField("Location", text: $location)
                 }
                 .padding(.vertical, 8)
@@ -59,13 +59,13 @@ struct AddEventView: View {
     
     private var doneButton: some View {
         Button("Done") { addEvent(); dismiss() }
-            .disabled(name.isEmpty)
+            .disabled(title.isEmpty)
             .font(.headline)
     }
     
     
     private func addEvent() {
-        onAdd(Event(name: name, location: location))
+        onAdd(Event(title: title, location: location))
     }
     
     private func dismiss() {

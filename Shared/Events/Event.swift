@@ -12,7 +12,7 @@ struct Event: Identifiable, Decodable {
     @DocumentID
     var id: String?
     
-    var name: String
+    var title: String
     var location: String
     
 }

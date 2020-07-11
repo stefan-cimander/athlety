@@ -14,9 +14,12 @@ struct AthletyApp: App {
     @UIApplicationDelegateAdaptor(AthletyAppDelegate.self) var appDelegate
     #endif
     
+    @StateObject
+    private var eventStore = EventStore()
+    
     var body: some Scene {
         WindowGroup {
-            AthletyAppView()
+            AthletyAppView(eventStore: eventStore)
         }
     }
 }
