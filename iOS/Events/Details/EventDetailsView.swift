@@ -51,7 +51,7 @@ struct EventDetailsView: View {
 
 struct EventDetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        let event = Event(title: "Nachtmeeting", location: "Rheinfelden")
+        let event = Event(title: "Nachtmeeting", location: "Rheinfelden", startsAt: Date(), endsAt: Date())
         NavigationView {
             EventDetailsView(event: event)
         }

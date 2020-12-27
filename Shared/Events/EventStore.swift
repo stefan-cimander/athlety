@@ -12,8 +12,11 @@ class EventStore: ObservableObject {
     
     @Published var events: [Event] = []
     
-    let eventsCollection = Firestore.firestore().collection("events")
+    private let eventsCollection = Firestore.firestore().collection("events")
     
+    ///
+    /// Loads all events.
+    ///
     func loadAll() {
         eventsCollection.addSnapshotListener { (querySnapshot, error) in
             if let error = error {
@@ -25,6 +28,24 @@ class EventStore: ObservableObject {
         }
     }
     
+    ///
+    /// Adds a new event.
+    ///
+    /// - Parameter event: The new event to add.
+    ///
+    func add(_ event: Event) {
+        do {
+            let _ = try eventsCollection.addDocument(from: event)
+        } catch {
+            print("Could not add event \(event.title) - \(error.localizedDescription)")
+        }
+    }
+    
+    ///
+    /// Updates a given event.
+    ///
+    /// - Parameter event: The event to update.
+    ///
     func update(_ event: Event) {
         guard let eventId = event.id else {
             print("Cannot update event \(event.title) without an id")

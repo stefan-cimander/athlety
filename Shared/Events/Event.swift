@@ -14,6 +14,8 @@ struct Event: Identifiable, Codable {
     
     var title: String
     var location: String
+    var startsAt: Date
+    var endsAt: Date
     
     var isFavorite: Bool = false
     

@@ -25,7 +25,7 @@ struct EventCardView: View {
 
 struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
-        let event = Event(title: "Nachtmeeting", location: "Rheinfelden")
+        let event = Event(title: "Nachtmeeting", location: "Rheinfelden", startsAt: Date(), endsAt: Date())
         EventCardView(event: event)
     }
 }

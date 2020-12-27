@@ -11,8 +11,8 @@ class EventTestData: EventStore {
     
     override func loadAll() {
         events = [
-            Event(id: "L9riyhPxH0ZqjtvXgmEm", title: "Munich Indoor", location: "München"),
-            Event(id: "PXtToYDN4Q1GdquzMQgI", title: "Bayerische Meisterschaften", location: "Fürth")
+            Event(id: "L9riyhPxH0ZqjtvXgmEm", title: "Munich Indoor", location: "München", startsAt: Date(), endsAt: Date()),
+            Event(id: "PXtToYDN4Q1GdquzMQgI", title: "Bayerische Meisterschaften", location: "Fürth", startsAt: Date(), endsAt: Date())
         ]
     }
     
