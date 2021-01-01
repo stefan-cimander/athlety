@@ -11,10 +11,7 @@ struct AddEventView: View {
     
     var onAdd: (Event) -> ()
     
-    @State private var title = ""
-    @State private var location = ""
-    @State private var startDate = Date()
-    @State private var endDate = Date().addingTimeInterval(3600)
+    @ObservedObject private var viewModel = AddEventViewModel()
     
     @State private var isStartDateTimePickerShown = false
     @State private var isEndDateTimePickerShown = false
@@ -22,15 +19,14 @@ struct AddEventView: View {
     @Environment(\.presentationMode)
     private var presentationMode
     
-    private let calendar = Calendar.current
     
     var body: some View {
         NavigationView {
             Form {
 
                 Section(header: Text("General")) {
-                    TextField("Title", text: $title)
-                    TextField("Location", text: $location)
+                    TextField("Title", text: $viewModel.title)
+                    TextField("Location", text: $viewModel.location)
                 }
                 .padding(.vertical, 8)
                 
@@ -42,9 +38,9 @@ struct AddEventView: View {
                             HStack {
                                 Text("Begins")
                                 Spacer()
-                                Text(startDate, style: .date)
+                                Text(viewModel.startDate, style: .date)
                                     .foregroundColor(isStartDateTimePickerShown ? Color.accentColor : Color.primary)
-                                Text(startDate, style: .time)
+                                Text(viewModel.startDate, style: .time)
                                     .foregroundColor(isStartDateTimePickerShown ? Color.accentColor : Color.primary)
                             }
                         }
@@ -55,7 +51,7 @@ struct AddEventView: View {
                     }
                     
                     if (isStartDateTimePickerShown) {
-                        DateTimePicker(dateTime: $startDate)
+                        DateTimePicker(dateTime: $viewModel.startDate)
                     }
                     
                     GeometryReader { _ in
@@ -65,11 +61,11 @@ struct AddEventView: View {
                                 Text("Ends")
                                 Spacer()
                                 
-                                if (!calendar.isDate(startDate, equalTo: endDate, toGranularity: .day)) {
-                                    Text(endDate, style: .date)
+                                if (!viewModel.isStartAndEndDateAtSameDay) {
+                                    Text(viewModel.endDate, style: .date)
                                         .foregroundColor(isEndDateTimePickerShown ? Color.accentColor : Color.primary)
                                 }
-                                Text(endDate, style: .time)
+                                Text(viewModel.endDate, style: .time)
                                     .foregroundColor(isEndDateTimePickerShown ? Color.accentColor : Color.primary)
                             }
                         }
@@ -80,30 +76,25 @@ struct AddEventView: View {
                     }
                     
                     if (isEndDateTimePickerShown) {
-                        DateTimePicker(dateTime: $endDate)
+                        DateTimePicker(dateTime: $viewModel.endDate)
                     }
                 }
                 .padding(.vertical, 8)
             }
             .font(.body)
-            .navigationBarTitle("Add Event", displayMode: .inline)
-            .navigationBarItems(leading: cancelButton, trailing: doneButton)
+            .navigationBarTitle("Event", displayMode: .inline)
+            .navigationBarItems(leading: cancelButton, trailing: addButton)
         }
-        
     }
     
     private var cancelButton: some View {
         Button("Cancel") { dismiss() }
     }
     
-    private var doneButton: some View {
-        Button("Done") { addEvent(); dismiss() }
-            .disabled(title.isEmpty)
+    private var addButton: some View {
+        Button("Add") { onAdd(viewModel.toEvent()); dismiss() }
+            .disabled(viewModel.hasInvalidTitle || viewModel.hasInvalidEndDate)
             .font(.headline)
-    }
-    
-    private func addEvent() {
-        onAdd(Event(title: title, location: location, startsAt: startDate, endsAt: endDate))
     }
     
     private func dismiss() {

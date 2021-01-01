@@ -12,6 +12,7 @@
 		78A4EFCA259F814100F3A276 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
 		78A4EFCB259F814300F3A276 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
 		78A4EFCC259F814500F3A276 /* EventTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E724BA44F60077951F /* EventTestData.swift */; };
+		78A4EFDE259F976100F3A276 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4EFDD259F976100F3A276 /* AddEventViewModel.swift */; };
 		78EEDC1A2598BEA70007E18D /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EEDC192598BEA70007E18D /* DateTimePicker.swift */; };
 		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
 		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		78A4EFDD259F976100F3A276 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
 		78EEDC192598BEA70007E18D /* DateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
 		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E304B74124B2332700C6C408 /* AddEventView.swift */,
+				78A4EFDD259F976100F3A276 /* AddEventViewModel.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -354,7 +357,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E349425724AF50C600658E9D = {
 						CreatedOnToolsVersion = 12.0;
@@ -440,6 +443,7 @@
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E3B817E824BA44F60077951F /* EventTestData.swift in Sources */,
 				E35F7D5D24BA4A71008E7A2D /* EventCardView.swift in Sources */,
+				78A4EFDE259F976100F3A276 /* AddEventViewModel.swift in Sources */,
 				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
 				E3B817E424BA3E990077951F /* EventStore.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
@@ -610,6 +614,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WQK6AKPMW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -631,6 +636,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4WQK6AKPMW;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -653,6 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
@@ -675,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_PREVIEWS = YES;
