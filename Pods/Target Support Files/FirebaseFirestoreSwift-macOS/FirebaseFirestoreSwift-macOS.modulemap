@@ -1,6 +1,0 @@
-framework module FirebaseFirestoreSwift {
-  umbrella header "FirebaseFirestoreSwift-macOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

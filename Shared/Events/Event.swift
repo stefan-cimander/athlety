@@ -5,6 +5,7 @@
 //  Created by Stefan Cimander on 05.07.20.
 //
 
+import Foundation
 import FirebaseFirestoreSwift
 
 struct Event: Identifiable, Codable {
