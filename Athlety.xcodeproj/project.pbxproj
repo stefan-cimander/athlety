@@ -13,6 +13,8 @@
 		78A4EFCB259F814300F3A276 /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E324BA3E990077951F /* EventStore.swift */; };
 		78A4EFCC259F814500F3A276 /* EventTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B817E724BA44F60077951F /* EventTestData.swift */; };
 		78A4EFDE259F976100F3A276 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4EFDD259F976100F3A276 /* AddEventViewModel.swift */; };
+		78A4EFE6259FD0B600F3A276 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4EFE5259FD0B600F3A276 /* LoginView.swift */; };
+		78A4EFF1259FD98900F3A276 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4EFF0259FD98900F3A276 /* ProfileView.swift */; };
 		78EEDC1A2598BEA70007E18D /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EEDC192598BEA70007E18D /* DateTimePicker.swift */; };
 		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
 		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		78A4EFDD259F976100F3A276 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		78A4EFE5259FD0B600F3A276 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		78A4EFF0259FD98900F3A276 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		78EEDC192598BEA70007E18D /* DateTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
 		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
 		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
@@ -113,6 +117,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78A4EFE3259FD08B00F3A276 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				78A4EFE4259FD0A400F3A276 /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		78A4EFE4259FD0A400F3A276 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				78A4EFE5259FD0B600F3A276 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		78A4EFEF259FD96E00F3A276 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				78A4EFF0259FD98900F3A276 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		78EEDC172598BE810007E18D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,9 +256,11 @@
 		E349425A24AF50C600658E9D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				78EEDC172598BE810007E18D /* Utils */,
+				78A4EFE3259FD08B00F3A276 /* Auth */,
 				E304B73924B21EC700C6C408 /* App */,
 				E304B73E24B2252E00C6C408 /* Events */,
+				78A4EFEF259FD96E00F3A276 /* Profile */,
+				78EEDC172598BE810007E18D /* Utils */,
 				E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */,
 				E349425B24AF50C600658E9D /* Info.plist */,
 			);
@@ -450,6 +480,8 @@
 				E304B74224B2332700C6C408 /* AddEventView.swift in Sources */,
 				E35F7D6024BA53AA008E7A2D /* EventDetailsView.swift in Sources */,
 				E319BA7224B23552007040B4 /* Event.swift in Sources */,
+				78A4EFF1259FD98900F3A276 /* ProfileView.swift in Sources */,
+				78A4EFE6259FD0B600F3A276 /* LoginView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

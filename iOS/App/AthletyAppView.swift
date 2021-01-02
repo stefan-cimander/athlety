@@ -21,7 +21,7 @@ struct AthletyAppView: View {
                     Text("Events")
                 }
                 .tag(1)
-            Text("Profile")
+            ProfileView()
                 .tabItem {
                     let imageName = selectedTab == 2 ? "person.fill" : "person"
                     Image(systemName: imageName).imageScale(.large)
