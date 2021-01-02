@@ -46,6 +46,7 @@ struct AddEventView: View {
                         }
                     }
                     .onTapGesture {
+                        hideKeyboard()
                         isEndDateTimePickerShown = false
                         isStartDateTimePickerShown.toggle()
                     }
@@ -71,6 +72,7 @@ struct AddEventView: View {
                         }
                     }
                     .onTapGesture {
+                        hideKeyboard()
                         isStartDateTimePickerShown = false
                         isEndDateTimePickerShown.toggle()
                     }
@@ -95,6 +97,11 @@ struct AddEventView: View {
         Button("Add") { onAdd(viewModel.toEvent()); dismiss() }
             .disabled(viewModel.hasInvalidTitle || viewModel.hasInvalidEndDate)
             .font(.headline)
+    }
+    
+    private func hideKeyboard() {
+        let resignFirstResponder = #selector(UIResponder.resignFirstResponder)
+        UIApplication.shared.sendAction(resignFirstResponder, to: nil, from: nil, for: nil)
     }
     
     private func dismiss() {

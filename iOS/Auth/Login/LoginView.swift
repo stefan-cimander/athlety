@@ -17,11 +17,10 @@ struct LoginView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 16) {
+            VStack(alignment: .leading, spacing: 16) {
                 withRoundedRectangleOverlay(emailTextField)
                 withRoundedRectangleOverlay(passwordTextField)
-                loginButton
-                    .padding(.top, 20)
+                loginButton.padding(.top, 20)
             }
             .padding()
             .navigationTitle("Log In")
