@@ -17,12 +17,12 @@
 		78A4F00C259FF97E00F3A276 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 78A4F00B259FF97E00F3A276 /* FirebaseFirestore */; };
 		78A4F00E259FF97E00F3A276 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 78A4F00D259FF97E00F3A276 /* FirebaseFirestoreSwift-Beta */; };
 		78A4F01F25A0031500F3A276 /* DateTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A4F01E25A0031500F3A276 /* DateTimePicker.swift */; };
-		E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */; };
-		E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AthletyAppView.swift */; };
+		E304B73B24B21EDB00C6C408 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73A24B21EDB00C6C408 /* AppView.swift */; };
+		E304B73D24B2231900C6C408 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73C24B2231900C6C408 /* AppView.swift */; };
 		E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B73F24B2254E00C6C408 /* EventsOverview.swift */; };
 		E304B74224B2332700C6C408 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E304B74124B2332700C6C408 /* AddEventView.swift */; };
 		E31422FC24B8FE5A00CCE52C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */; };
-		E31689EF24B8FB610061D9DF /* AthletyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */; };
+		E31689EF24B8FB610061D9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31689EE24B8FB610061D9DF /* AppDelegate.swift */; };
 		E319BA7224B23552007040B4 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = E319BA7124B23552007040B4 /* Event.swift */; };
 		E349426D24AF50C600658E9D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349426C24AF50C600658E9D /* Tests_iOS.swift */; };
 		E349427824AF50C600658E9D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349427724AF50C600658E9D /* Tests_macOS.swift */; };
@@ -58,12 +58,12 @@
 		78A4EFE5259FD0B600F3A276 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		78A4EFF0259FD98900F3A276 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		78A4F01E25A0031500F3A276 /* DateTimePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimePicker.swift; sourceTree = "<group>"; };
-		E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
-		E304B73C24B2231900C6C408 /* AthletyAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppView.swift; sourceTree = "<group>"; };
+		E304B73A24B21EDB00C6C408 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		E304B73C24B2231900C6C408 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		E304B73F24B2254E00C6C408 /* EventsOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOverview.swift; sourceTree = "<group>"; };
 		E304B74124B2332700C6C408 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		E31422FB24B8FE5A00CCE52C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyAppDelegate.swift; sourceTree = "<group>"; };
+		E31689EE24B8FB610061D9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E319BA7124B23552007040B4 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		E349425124AF50C400658E9D /* AthletyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletyApp.swift; sourceTree = "<group>"; };
 		E349425324AF50C600658E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		E304B73824B21EBC00C6C408 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E304B73C24B2231900C6C408 /* AthletyAppView.swift */,
+				E304B73C24B2231900C6C408 /* AppView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -170,8 +170,8 @@
 		E304B73924B21EC700C6C408 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E304B73A24B21EDB00C6C408 /* AthletyAppView.swift */,
-				E31689EE24B8FB610061D9DF /* AthletyAppDelegate.swift */,
+				E304B73A24B21EDB00C6C408 /* AppView.swift */,
+				E31689EE24B8FB610061D9DF /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -471,12 +471,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E31689EF24B8FB610061D9DF /* AthletyAppDelegate.swift in Sources */,
+				E31689EF24B8FB610061D9DF /* AppDelegate.swift in Sources */,
 				E349427A24AF50C600658E9D /* AthletyApp.swift in Sources */,
 				E3B817E824BA44F60077951F /* EventTestData.swift in Sources */,
 				E35F7D5D24BA4A71008E7A2D /* EventCardView.swift in Sources */,
 				78A4EFDE259F976100F3A276 /* AddEventViewModel.swift in Sources */,
-				E304B73B24B21EDB00C6C408 /* AthletyAppView.swift in Sources */,
+				E304B73B24B21EDB00C6C408 /* AppView.swift in Sources */,
 				E3B817E424BA3E990077951F /* EventStore.swift in Sources */,
 				E304B74024B2254E00C6C408 /* EventsOverview.swift in Sources */,
 				E304B74224B2332700C6C408 /* AddEventView.swift in Sources */,
@@ -496,7 +496,7 @@
 				78A4EFCA259F814100F3A276 /* Event.swift in Sources */,
 				78A4EFCB259F814300F3A276 /* EventStore.swift in Sources */,
 				78A4EFCC259F814500F3A276 /* EventTestData.swift in Sources */,
-				E304B73D24B2231900C6C408 /* AthletyAppView.swift in Sources */,
+				E304B73D24B2231900C6C408 /* AppView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

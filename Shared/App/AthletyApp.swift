@@ -11,7 +11,8 @@ import SwiftUI
 struct AthletyApp: App {
     
     #if os(iOS)
-    @UIApplicationDelegateAdaptor(AthletyAppDelegate.self) var appDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self)
+    private var appDelegate
     #endif
     
     @StateObject
@@ -19,8 +20,7 @@ struct AthletyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AthletyAppView()
-                .environmentObject(eventStore)
+            AppView().environmentObject(eventStore)
         }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  AthletyAppView.swift
+//  AppView.swift
 //  Athlety
 //
 //  Created by Stefan Cimander on 05.07.20.
@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct AthletyAppView: View {
+struct AppView: View {
     var body: some View {
         Text("Hello, World!")
     }
 }
 
-struct AthletyAppView_Previews: PreviewProvider {
+struct AppView_Previews: PreviewProvider {
     static var previews: some View {
-        AthletyAppView()
+        AppView()
     }
 }
